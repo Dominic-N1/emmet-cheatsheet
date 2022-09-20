@@ -1,0 +1,19 @@
+.display_none,
+.display_none_button {
+  display: none;
+}
+
+.green_bgcolor {
+  background-color: #b1ffb9;
+  flex-wrap: nowrap;
+}
+
+.red_bgcolor {
+  background-color: #ff9292;
+  flex-wrap: nowrap;
+}
+
+.my_button {
+  background-color: #333;
+  border-radius: 15%;
+}
