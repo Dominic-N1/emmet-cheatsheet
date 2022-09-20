@@ -17,9 +17,10 @@
   );
 
   const mySnipets = JSON.parse(localStorage.getItem("mySnipets"));
-  Array.from(document.querySelectorAll(".ch-snippet__name"))
-    .filter((el) => mySnipets.includes(el.textContent))
-    .forEach((el) => el.closest(".ch-snippet").classList.add("display_none"));
+  if (mySnipets)
+    Array.from(document.querySelectorAll(".ch-snippet__name"))
+      .filter((el) => mySnipets.includes(el.textContent))
+      .forEach((el) => el.closest(".ch-snippet").classList.add("display_none"));
 
   const mySnipetsCollection = document.getElementsByClassName("display_none");
 
